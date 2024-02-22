@@ -6,7 +6,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 import cv2
 
-
 def Init():
     ch_options = Options()
     ch_options.add_argument("--headless")
