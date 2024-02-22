@@ -13,10 +13,10 @@ def Init():
 
     # 接下来六行需要设置，其余不要动   #建议看到购买成功的提示后，在订单中心确认购买成功后再终止脚本
     TargetTime = "2023-09-26 20:00:00.00000000"  # 设置抢购时间
-    WangZhi = "https://show.bilibili.com/platform/detail.html?id=76829&from=pc_ticketlist"  # 设置抢票网址
+    WangZhi = "https://show.bilibili.com/platform/detail.html?id=81570&from=pc_ticketlist"  # 设置抢票网址
     Session = '1'  # 场次设置：修改引号内部的数字，数字对应第选项的序号，选项序号从左到右从1开始依次排列
     Price = '2'  # 价格设置：设置方法与场次设置一样
-    Number = 1  # 票数设置，注意不要超过限制 #另外，如果是实名制购票的话要先在会员购中心-购买人信息添加好
+    Number = 2  # 票数设置，注意不要超过限制 #另外，如果是实名制购票的话要先在会员购中心-购买人信息添加好
     chrome_driver_path = 'C:\\Users\\归忆886hyf\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe'  # 指定Chromedriver的路径
 
     # 创建Service对象
@@ -34,7 +34,7 @@ def Init():
     WebDriver.find_element(By.CLASS_NAME, "nav-header-register").click()
     time.sleep(1)
 
-    # 截取登录二维码并展示
+    # 截取登录二维码并展示    扫完登录后页面不会变化，手动关闭即可
     WebDriver.save_screenshot('./QRcode.png')
     qrimg = cv2.imread('./QRcode.png')
     cv2.imshow("qrimg", qrimg)
