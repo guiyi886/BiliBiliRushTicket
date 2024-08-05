@@ -1,6 +1,9 @@
 # BilibiliTicketRushBuy
- bilibili会员购抢票脚本，使用时需自行设置相关参数
+
+bilibili会员购抢票脚本，使用时需自行设置相关参数，拉取自 https://github.com/akaimoe/BilibiliTicketRushBuy 进行测试修改。
+
 ## 参数设置
+
 抢购时间设置：Main.py第12行
 
 目标抢购页面设置：Main.py第17行
@@ -10,32 +13,41 @@
 场次选择：Main.py第20行
 
 价格选择：Main.py第21行
+
 ## 环境
+
 python == 3.10
 
 Google Chrome == 正式版
 
 ## 使用流程
+
 1.按照上述操作设置好相关参数
 
 2.在项目所在路径打开cmd
 
 3.依次输入以下指令并运行：
+
 ```
 pip install -r requirements.txt
 python Main.py
 ```
+
 4.若有正常输出，则程序正常运行，请等待出现名为qrimg的窗口（其中内容为bilibili账号登录页面截图），待扫码登录后关闭qrimg窗口，随后程序将自动运行，无需额外操作。
+
 ## TODO
+
 1.多线程运行
 
 2.可视化页面
+
 ## 注意事项
+
 若pip安装出现网络问题，可尝试使用以下命令进行安装
+
 ```
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-
 
 使用程序前，请保证网络畅通和电脑时间为北京时间。
 
